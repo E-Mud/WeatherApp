@@ -1,0 +1,84 @@
+"#index": {
+	backgroundColor:"#226666",
+	top : "0%",
+	height : Titanium.UI.FILL
+}
+
+".vertical-container": {
+	layout : "vertical",
+	width : Titanium.UI.FILL,
+	height : Titanium.UI.SIZE
+}
+
+".horizontal-container": {
+	layout : "horizontal",
+	width : Titanium.UI.FILL,
+	height : Titanium.UI.SIZE
+}
+
+"#primaryInfo":{
+	layout : "vertical",
+	width : Titanium.UI.FILL,
+	height : "50%"	
+}
+
+"#secondaryInfo":{
+	borderWidth : "1dp",
+	borderColor : "#3C3C3C",
+	backgroundColor:"#AA8439",
+	layout : "horizontal",
+	width : Titanium.UI.FILL,
+	height : "30%"
+}
+
+"#forecastInfo":{
+	layout : "horizontal",
+	width : Titanium.UI.FILL,
+	height : "20%"
+}
+
+".secondaryInfo-content":{
+	height : "33%",
+	borderWidth : "1dp",
+	borderColor : "#3C3C3C"
+}
+
+".secondary-content":{
+	top: "5%",
+	right: "5%",
+	bottom: "5%",
+	left: "5%"	
+}
+
+".forecast-content":{
+	width : "25%",
+	height : Titanium.UI.FILL
+}
+
+".big-icon":{
+	height : "50%"
+}
+
+".medium-icon":{
+	height : Titanium.UI.FILL
+}
+
+".forecast-icon":{
+	height : "50%"
+}
+
+".big-label":{
+	color : "#F5F5F5",
+	font:{
+		fontSize : 32,
+		fontFamily : "Verdana"
+	}
+}
+
+".medium-label":{
+	color : "#F5F5F5",
+	font:{
+		fontSize : 24,
+		fontFamily : "Verdana"
+	}
+}

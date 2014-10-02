@@ -1,0 +1,41 @@
+<Alloy>
+	<Window class="vertical-container">
+		<View id="primaryInfo">
+			<Label class="big-label" id="locationText">Granada, Spain</Label>
+			<ImageView class="big-icon" id="weatherIcon" image="/img/weather-sunny.png"/>
+			<Label class="big-label" id="weatherText">Sunny</Label>
+		</View>
+		<View id="secondaryInfo">
+			<View class="horizontal-container secondaryInfo-content">
+				<ImageView class="medium-icon secondary-content" image="/img/temperature.png"/>
+				<Label id="temperatureText" class="medium-label secondary-content"/>
+			</View>
+			<View class="horizontal-container secondaryInfo-content">
+				<ImageView class="medium-icon secondary-content" image="/img/wind.png"/>
+				<Label id="windText" class="medium-label secondary-content"/>
+			</View>
+			<View class="horizontal-container secondaryInfo-content">
+				<ImageView class="medium-icon secondary-content" image="/img/humidity.png"/>
+				<Label id="humidityText" class="medium-label secondary-content"/>
+			</View>
+		</View>
+		<View id="forecastInfo">
+			<View class="vertical-container forecast-content">
+				<ImageView id="forecastIcon0" class="forecast-icon" image="/img/weather-sunny.png"/>
+				<Label id="forecastDate0" class="medium-label">04/12</Label>
+			</View>
+			<View class="vertical-container forecast-content">
+				<ImageView id="forecastIcon1" class="forecast-icon" image="/img/weather-sunny.png"/>
+				<Label id="forecastDate1" class="medium-label">04/12</Label>
+			</View>
+			<View class="vertical-container forecast-content">
+				<ImageView id="forecastIcon2" class="forecast-icon" image="/img/weather-sunny.png"/>
+				<Label id="forecastDate2" class="medium-label">04/12</Label>
+			</View>
+			<View class="vertical-container forecast-content">
+				<ImageView id="forecastIcon3" class="forecast-icon" image="/img/weather-sunny.png"/>
+				<Label id="forecastDate3" class="medium-label">04/12</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>
