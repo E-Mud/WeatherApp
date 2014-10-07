@@ -1,5 +1,5 @@
 "#index": {
-	backgroundColor:"#226666",
+	backgroundColor:"#4EBABA",
 	top : "0%",
 	height : Titanium.UI.FILL
 }
@@ -25,7 +25,7 @@
 "#secondaryInfo":{
 	borderWidth : "1dp",
 	borderColor : "#3C3C3C",
-	backgroundColor:"#AA8439",
+	backgroundColor:"#FFCE6B",
 	layout : "horizontal",
 	width : Titanium.UI.FILL,
 	height : "30%"

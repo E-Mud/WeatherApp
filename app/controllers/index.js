@@ -24,65 +24,29 @@ function fillForecastInfo(model){
 }
 
 function getWeatherIcon(code){
-	switch(code){
-		case 31:
-		case 32:
-		case 33:
-		case 34:
-		case 36:
-			return "weather-sunny.png";
-		case 27:
-		case 28:
-		case 29:
-		case 30:
-		case 44:
-			return "weather-partly-sunny.png";
-		case 5:
-		case 6:
-		case 7:
-		case 35:
-			return "weather-rain.png";
-		case 8:
-		case 9:
-		case 10:
-		case 11:
-		case 12:
-		case 13:
-		case 14:
-		case 15:
-		case 16:
-		case 41:
-		case 42:
-		case 43:
-		case 46:
-			return "weather-snow.png";
-		case 17:
-			return "weather-hail.png";
-		case 19:
-		case 20:
-		case 21:
-		case 22:
-		case 23:
-		case 24:
-		case 25:
-		case 26:
-			return "weather-cloudy.png";
-		case 37:		
-		case 38:
-		case 39:
-		case 40:
-		case 47:
-			return "weather-sunny-rain.png";
-		case 0:
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 45:
-			return "weather-thunderstorm.png";
-		default:
-		return "";
-	}
+	if(code <= 4 || code == 45)
+		return "weather-thunderstorm.png";
+		
+	if((code >= 5 && code <= 7) || code == 35)
+		return "weather-rain.png";
+	
+	if((code >=8 && code <=16) || (code >=41 && code <=43) || code == 46)
+		return "weather-snow.png";
+		
+	if(code >= 17 && code <= 18)
+		return "weather-hail.png";
+		
+	if(code >=19 && code <= 26)
+		return "weather-cloudy.png";
+		
+	if((code >=27 && code <= 30) || code == 44)
+		return "weather-partly-sunny.png";
+		
+	if((code >=31 && code <= 34) || code == 36)
+		return "weather-sunny.png";
+	
+	if((code >=37 && code <=40) || code == 47)
+		return "weather-sunny-rain.png";
 }
 
 function getWeatherInfo(lat, longt){
@@ -108,15 +72,15 @@ $.index.open();
 if (Ti.Geolocation.locationServicesEnabled) {
 	if(Ti.Platform.osname == "iphone" || Ti.Platform.osname == "ipad"){
 		Ti.Geolocation.purpose = 'Get Current Location';
-	    Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_BEST;
-	    Ti.Geolocation.distanceFilter = 10;
+	    Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HUNDRED_METERS;
+	    Ti.Geolocation.distanceFilter = 300;
 	    Ti.Geolocation.preferredProvider = Ti.Geolocation.PROVIDER_GPS;
 	}else{
 		if(Ti.Platform.osname == "android"){
 			var providerGps = Ti.Geolocation.Android.createLocationProvider({
 			    name: Ti.Geolocation.PROVIDER_GPS,
-			    minUpdateDistance: 100.0,
-			    minUpdateTime: 30
+			    minUpdateDistance: 300.0,
+			    minUpdateTime: 150
 			});
 			Ti.Geolocation.Android.addLocationProvider(providerGps);
 			Ti.Geolocation.Android.manualMode = true;		
