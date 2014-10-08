@@ -1,0 +1,13 @@
+<Alloy>
+	<Window>
+		<View id="lookBar">
+			<TextField id="lookAddress"></TextField>
+			<Button id="lookButton">O</Button>			
+		</View>
+		<View id="mapContainer">
+		</View>
+		<View id="acceptBar">
+			<Button id="acceptButton">Accept</Button>
+		</View>
+	</Window>
+</Alloy>

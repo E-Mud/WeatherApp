@@ -95,5 +95,6 @@ if (Ti.Geolocation.locationServicesEnabled) {
         }
     });
 } else {
-    alert('Please enable location service.');
+    var win = Alloy.createController('map').getView();
+	win.open();
 }

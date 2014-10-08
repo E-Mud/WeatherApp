@@ -1,0 +1,51 @@
+"#map":{
+	backgroundColor : "#4EBABA",
+	layout : "vertical",
+	width : Titanium.UI.FILL,
+	height : Titanium.UI.SIZE
+}
+
+"#lookBar":{
+	layout : "horizontal",
+	width : Titanium.UI.FILL,
+	height : "10%",
+	top : "0dp"
+}
+
+"#acceptBar":{
+	layout : "horizontal",
+	width : Titanium.UI.FILL,
+	height : "10%",
+	bottom : "0dp"
+}
+
+"#mapContainer":{
+	width : Titanium.UI.FILL,
+	height : "80%"	
+}
+
+"#lookAddress":{
+	backgroundColor : "#FFFFFF",
+	height : Titanium.UI.FILL,
+	width : "80%",
+	left : "1%",
+	top : "1%",
+	bottom : "1%"
+}
+
+"#lookButton":{
+	height : Titanium.UI.FILL,
+	width : "20%",
+	right : "1%",
+	top : "1%",
+	bottom : "1%"
+}
+
+"#acceptButton":{
+	height : Titanium.UI.FILL,
+	width : Titanium.UI.FILL,
+	left : "1%",
+	top : "1%",
+	bottom : "1%",
+	right : "1%"
+}
